@@ -1,0 +1,27 @@
+{
+    "tasks": [
+		{
+            "label": "build",
+            "type": "shell",
+            "command": "cc",
+			"args": [
+				"-Wall",
+				"-Wextra",
+				"-Werror",
+				"-g",
+				"-I",
+				".",
+				"get_next_line.c",
+				"get_next_line_utils.c",
+				"-o",
+				"getget"
+			],
+            "group": {
+                "kind": "build",
+                "isDefault": true,
+				"problemMatcher": "$gcc"
+            }
+        }
+	],
+    "version": "2.0.0"
+}
